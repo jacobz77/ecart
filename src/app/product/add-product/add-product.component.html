@@ -1,0 +1,17 @@
+<div id="a" class="container w-50 text-center mt-4 mb-4">
+    <h1 style="color: beige;">Add New Product</h1>
+    <form [formGroup]="addProductForm" (ngSubmit)="addNewProduct()" action="" >
+        <input id="pid" name="p1" formControlName="id" class="form-control mt-2 p-2" placeholder="Product Id" type="text">
+        <input id="pname" name="p2" formControlName="productName" class="form-control mt-2 p-2" placeholder="Product Name" type="text">
+        <input id="pcid" name="p3" formControlName="categoryId"  class="form-control mt-2 p-2" placeholder="Category Id" type="text">
+        <input id="desc" name="p4" formControlName="description"  class="form-control mt-2 p-2" placeholder="Description"  type="text">
+        <input id="pri" name="p5" formControlName="price"  class="form-control mt-2 p-2" placeholder="Price"  type="text">
+        <input id="siz" name="p6" formControlName="size"  class="form-control mt-2 p-2" placeholder="Size"  type="text">
+        <input id="avail" name="p7" formControlName="isAvailable"  class="form-control mt-2 p-2" placeholder="IsAvailable true/false"  type="text">
+        <input id="pimag" name="p8" formControlName="productImage"  class="form-control mt-2 p-2" placeholder="Product Image"  type="text">
+        <input id="rat" name="p9" formControlName="rating"  class="form-control mt-2 p-2" placeholder="Rating"  type="text">
+        <input id="rev" name="p10" formControlName="review"  class="form-control mt-2 p-2" placeholder="Review"  type="text">
+        <input id="ven" name="p11" formControlName="vendor_name" class="form-control mt-2 p-2" placeholder="Vendor name"  type="text">
+        <button class="btn btn-success mt-2 p-2 mb-4" >Add Product</button>
+    </form>
+</div>

@@ -1,0 +1,34 @@
+<section class="py-5 ">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{productdata.productImage}}" alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">Product Id : {{productdata.id}}</div>
+                <h1 class="display-5 fw-bolder">{{productdata.description}}</h1>
+                <div class="fs-5 mb-5">
+                    <span >Rs {{productdata.price}}</span><br>
+                    <span>Size : {{productdata.size}}</span><br>
+                    <span>Rating : {{productdata.rating}} </span><br>
+                    <span>Review : {{productdata.review}}</span>
+                </div>
+                <p class="lead">{{productdata.productName}}</p>
+                <div class="d-flex">
+                    <button class="btn btn-outline-dark flex-shrink-0 ms-3" type="button" >
+                        <i class="bi-cart-fill me-1"></i>
+                       <a style="text-decoration: none;color: rgb(55, 55, 176);" href="product/edit-product/{{productdata.id}}"> Edit</a>
+                    </button>
+
+                    <button class="btn btn-outline-dark flex-shrink-0 ms-3" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                        <a style="text-decoration: none;color: rgb(216, 30, 30);" href="product/delete-product/{{productdata.id}}"> Delete</a>
+
+                    </button>
+                    <button class="btn btn-outline-dark flex-shrink-0 ms-3" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

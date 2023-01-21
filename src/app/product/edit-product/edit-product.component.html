@@ -1,0 +1,41 @@
+<div id="a" class="container w-50 text-center mt-4 mb-4 bg-dark">
+    <h1 style="color: rgb(196, 196, 38);">Edit Product</h1>
+
+    <form (ngSubmit)="updateProduct(updateproductform)" #updateproductform="ngForm" action="">
+
+        <input [(ngModel)]="productdata.id"  id="pid" name="p1" class="form-control mt-2 p-2" placeholder="Product Id"
+            type="text">
+
+        <input [(ngModel)]="productdata.productName" id="pname" name="p2" class="form-control mt-2 p-2"
+            placeholder="Product Name" type="text">
+
+        <input [(ngModel)]="productdata.categoryId" id="pcid" name="p3" class="form-control mt-2 p-2"
+            placeholder="Category Id" type="text">
+
+        <input [(ngModel)]="productdata.description" id="desc" name="p4" class="form-control mt-2 p-2"
+            placeholder="Description" type="text">
+
+        <input [(ngModel)]="productdata.price" id="pri" name="p5" class="form-control mt-2 p-2" placeholder="Price"
+            type="text">
+
+        <input [(ngModel)]="productdata.size" id="siz" name="p6" class="form-control mt-2 p-2" placeholder="Size"
+            type="text">
+
+        <input [(ngModel)]="productdata.isAvailable" id="avail" name="p7" class="form-control mt-2 p-2"
+            placeholder="IsAvailable true/false" type="text">
+
+        <input [(ngModel)]="productdata.productImage" id="pimag" name="p8" class="form-control mt-2 p-2"
+            placeholder="Product Image" type="text">
+
+        <input [(ngModel)]="productdata.rating" id="rat" name="p9" class="form-control mt-2 p-2" placeholder="Rating"
+            type="text">
+
+        <input [(ngModel)]="productdata.review" id="rev" name="p10" class="form-control mt-2 p-2" placeholder="Review"
+            type="text">
+
+        <input [(ngModel)]="productdata.vendor_name" id="ven" name="p11" class="form-control mt-2 p-2"
+            placeholder="Vendor name" type="text">
+
+        <button class="btn btn-success mt-2 p-2 mb-4">Update</button>
+    </form>
+</div>
